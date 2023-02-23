@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="termometro.png">
+    <title>Conversor de Temperatura</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Conversor de Temperatura🌡️</h1>
+
+      <input type="number" placeholder="Temperature" class="temperatureValue" />
+      <div>
+        <label for="">Converter de : </label>
+        <select id="selectTemperature">
+          <option value="Cel">Celsius</option>
+          <option value="Fah">Fahrenheit</option>
+          <option value="Kel">Kelvin</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="">Converter para : </label><br />
+        <button class="convert" value="Celsius">Celsius</button>
+        <button class="convert" value="Fahrenheit">Fahrenheit</button>
+        <button class="convert" value="Kelvin">Kelvin</button>
+      </div>
+
+      <label class="convertedTemperature" for=""></label>
+    </div>
+    <script src="convert.js"></script>
+  </body>
+</html>
